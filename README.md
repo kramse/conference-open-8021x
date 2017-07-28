@@ -74,11 +74,11 @@ service freeradius stop
 
 
 Sources:
-https://wiki.emfcamp.org/wiki/Network/802.1X_client_settings - example client configuration
-https://events.ccc.de/camp/2015/wiki/Static:Network CCCamp 2015
-https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access
-https://en.wikipedia.org/wiki/IEEE_802.1X
+* https://wiki.emfcamp.org/wiki/Network/802.1X_client_settings - example client configuration
+* https://events.ccc.de/camp/2015/wiki/Static:Network CCCamp 2015
+* https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access
+* https://en.wikipedia.org/wiki/IEEE_802.1X
 
 
 Interesting apps - for configuring Android
-https://play.google.com/store/apps/details?id=tf.nox.wifisetup
+* https://play.google.com/store/apps/details?id=tf.nox.wifisetup

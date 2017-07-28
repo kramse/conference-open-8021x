@@ -1,0 +1,13 @@
+#
+# Consider using ansible for all your servers
+
+[all:vars]
+ansible_ssh_port=22
+
+[radius]
+radius ansible_ssh_host=10.1.2.3
+
+[infrastructure]
+# OpenBSD Servers - need python_interpreter specified
+server01 ansible_ssh_host=10.0.0.4      ansible_python_interpreter=/usr/local/bin/python
+#...

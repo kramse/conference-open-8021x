@@ -1,0 +1,22 @@
+---
+- hosts: radius
+  become: yes
+  vars:
+    grouplist: []
+  pre_tasks:
+  - include: tasks/playbook-start.yml
+  tasks:
+
+#  - include: tasks/common-openbsd.yml
+#    tags:
+#      - common
+
+  - name: Install FreeRADIUS software
+    apt: name={{ item }} state=latest
+    with_items:
+        - freeradius
+
+  - name: Configure FreeRADIUS software
+    template: src=freeradius/{{ item | basename }} dest=/etc/{{ item | basename }} owner=root group=freerad mode=0644
+    with_fileglob:
+        - freeradius/*
